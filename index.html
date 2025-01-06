@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulsar Sacrifice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pulsar Sacrifice</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Countdown to Sacrifice</h2>
+            <div class="countdown" id="countdown"></div>
+        </section>
+
+        <section>
+            <h2>Connect Your Wallet</h2>
+            <button id="connectWallet">Connect Wallet</button>
+        </section>
+
+        <section>
+            <h2>Sacrifice Tokens</h2>
+            <div>
+                <label for="tokenSelect">Choose Token</label>
+                <select id="tokenSelect"></select>
+            </div>
+            <div>
+                <label for="sacrificeAmount">Amount to Sacrifice</label>
+                <input type="number" id="sacrificeAmount" placeholder="Amount">
+            </div>
+            <button id="sacrificeButton" disabled>Sacrifice</button>
+        </section>
+
+        <section>
+            <h2>Sacrifices</h2>
+            <table id="sacrificeTable">
+                <thead>
+                    <tr>
+                        <th>User</th>
+                        <th>Token</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+
+        <section>
+            <button id="claimTokens">Claim Tokens</button>
+            <button id="withdrawFunds">Withdraw Funds</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Pulsar Sacrifice</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.5.2/web3.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
